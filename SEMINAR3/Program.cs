@@ -101,5 +101,7 @@ void SquareTable(int num)
 
 Console.Write("Ведите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-
-SquareTable(number);
+if (number > 0)
+    SquareTable(number);
+else
+    Console.WriteLine("Введите положительное число!");
